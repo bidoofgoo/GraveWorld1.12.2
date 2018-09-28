@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+      "all": "gwm:blocks/dead_soil_block"
+   }
+}
