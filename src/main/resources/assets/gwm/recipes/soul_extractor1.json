@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "C C",
+        "CSG",
+        "CCC"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:cobblestone",
+            "data": 0
+        }, 
+        "S": {
+            "item": "gwm:soul_dust",
+            "data": 0
+        }, 
+        "G": {
+            "item": "minecraft:glass",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "gwm:soul_extractor",
+        "count": 1,
+        "data": 0 
+    }
+}

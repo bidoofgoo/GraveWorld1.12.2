@@ -2,6 +2,7 @@ package com.bidoofgoo.graveworld;
 
 import com.bidoofgoo.graveworld.proxy.CommonProxy;
 import com.bidoofgoo.graveworld.util.Reference;
+import com.bidoofgoo.graveworld.util.handlers.GuiHandler;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -10,6 +11,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class Main {
@@ -27,7 +29,7 @@ public class Main {
 
 	@EventHandler
 	public static void init(FMLInitializationEvent event){
-
+		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
 	}
 
 	@EventHandler

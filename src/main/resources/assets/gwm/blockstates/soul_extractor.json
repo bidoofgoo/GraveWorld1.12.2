@@ -1,0 +1,12 @@
+{
+   "variants": {
+      "burning=false,facing=north": {"model": "gwm:soul_extractor"},
+      "burning=false,facing=south": { "model": "gwm:soul_extractor", "y": 180 },
+      "burning=false,facing=west":  { "model": "gwm:soul_extractor", "y": 270 },
+      "burning=false,facing=east":  { "model": "gwm:soul_extractor", "y": 90 },
+      "burning=true,facing=north": {"model": "gwm:soul_extractor_extracting"},
+      "burning=true,facing=south": { "model": "gwm:soul_extractor_extracting", "y": 180 },
+      "burning=true,facing=west":  { "model": "gwm:soul_extractor_extracting", "y": 270 },
+      "burning=true,facing=east":  { "model": "gwm:soul_extractor_extracting", "y": 90 }
+   }
+}

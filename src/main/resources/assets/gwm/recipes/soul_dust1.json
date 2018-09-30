@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "S"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:soul_sand",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "gwm:soul_dust",
+        "count": 4,
+        "data": 0 
+    }
+}

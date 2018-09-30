@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "gwm:blocks/dead_soil_block",
+        "down": "gwm:blocks/dead_soil_block",
+        "up": "gwm:blocks/dead_grass_block",
+        "north": "gwm:blocks/dead_grass_block_side",
+        "east": "gwm:blocks/dead_grass_block_side",
+        "south": "gwm:blocks/dead_grass_block_side",
+        "west": "gwm:blocks/dead_grass_block_side"
+    }
+}
