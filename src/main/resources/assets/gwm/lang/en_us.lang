@@ -11,3 +11,5 @@ container.soul_extractor=Soul Extractor
 tile.dead_grass_block.name=Dead Soil Grass
 item.void_dust.name=Void Dust
 item.soul_dust.name=Soul Dust
+item.seeking_soulmass.name=Seeking Soulmass
+entity.heap.name=Heap

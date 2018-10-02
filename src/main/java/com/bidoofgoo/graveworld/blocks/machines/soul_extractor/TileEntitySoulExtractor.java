@@ -299,7 +299,7 @@ public class TileEntitySoulExtractor extends TileEntityLockable implements ITick
             {
                 ItemStack outputstack1 = this.furnaceItemStacks.get(2);
                 ItemStack outputstack2 = this.furnaceItemStacks.get(2);
-                
+
                 boolean part1 = (outputstack1.getCount() + itemstack.getCount() <= this.getInventoryStackLimit() && outputstack1.getCount() + itemstack.getCount() <= outputstack1.getMaxStackSize());
                 boolean part2 = (outputstack2.getCount() + itemstack2.getCount() <= this.getInventoryStackLimit() && outputstack2.getCount() + itemstack2.getCount() <= outputstack2.getMaxStackSize());
 
@@ -372,11 +372,13 @@ public class TileEntitySoulExtractor extends TileEntityLockable implements ITick
         else
         {
             Item item = stack.getItem();
-            
+
             if(item == ModItems.SOUL_DUST)
             	return 70;
             if(item == ModItems.VOID_DUST)
-            	return 300;
+            	return 200;
+            if(item == ModItems.SEEKING_SOULMASS)
+            	return 1600;
             return 0;
         }
     }

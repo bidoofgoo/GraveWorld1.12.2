@@ -7,18 +7,15 @@ public class BlockBaseModel extends BlockBase{
 
 	public BlockBaseModel(String name, Material materialIn) {
 		super(name, materialIn);
-		
 	}
-	
+
 	@Override
 	public boolean isOpaqueCube(IBlockState state) {
-		// TODO Auto-generated method stub
 		return false;
 	}
-	
+
 	@Override
 	public boolean isFullCube(IBlockState state) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

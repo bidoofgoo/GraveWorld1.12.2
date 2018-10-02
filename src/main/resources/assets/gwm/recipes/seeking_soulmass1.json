@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "VVV",
+        "VSV",
+        "VVV"
+    ],
+    "key": {
+        "V": {
+            "item": "gwm:void_dust",
+            "data": 0
+        },
+        "S": {
+            "item": "gwm:soul_dust",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "gwm:seeking_soulmass",
+        "count": 1,
+        "data": 0
+    }
+}

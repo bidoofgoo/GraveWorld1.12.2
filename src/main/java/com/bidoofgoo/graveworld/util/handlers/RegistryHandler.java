@@ -1,15 +1,19 @@
 package com.bidoofgoo.graveworld.util.handlers;
 
+import com.bidoofgoo.graveworld.Main;
 import com.bidoofgoo.graveworld.init.ModBlocks;
+import com.bidoofgoo.graveworld.init.ModEntities;
 import com.bidoofgoo.graveworld.init.ModItems;
 import com.bidoofgoo.graveworld.util.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 @EventBusSubscriber
 public class RegistryHandler {
@@ -38,6 +42,20 @@ public class RegistryHandler {
 				((IHasModel) block).registerModel();
 			}
 		}
+	}
+
+	public static void preInitRegister() {
+		ModEntities.registerEntities();
+		RenderHandler.registryEntityRenders();
+	}
+
+	public static void initRegister() {
+		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
+		MinecraftForge.EVENT_BUS.register(new DropHandler());
+	}
+
+	public static void postInitRegister() {
+
 	}
 
 }

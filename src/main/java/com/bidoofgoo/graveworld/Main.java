@@ -2,8 +2,11 @@ package com.bidoofgoo.graveworld;
 
 import com.bidoofgoo.graveworld.proxy.CommonProxy;
 import com.bidoofgoo.graveworld.util.Reference;
+import com.bidoofgoo.graveworld.util.handlers.DropHandler;
 import com.bidoofgoo.graveworld.util.handlers.GuiHandler;
+import com.bidoofgoo.graveworld.util.handlers.RegistryHandler;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -24,17 +27,17 @@ public class Main {
 
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event){
-
+		RegistryHandler.preInitRegister();
 	}
 
 	@EventHandler
 	public static void init(FMLInitializationEvent event){
-		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
+		RegistryHandler.initRegister();
 	}
 
 	@EventHandler
 	public static void postInit(FMLPostInitializationEvent event){
-
+		RegistryHandler.postInitRegister();
 	}
 
 }
