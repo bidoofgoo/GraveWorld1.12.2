@@ -100,9 +100,9 @@ public class ModelHeap extends AdvancedModelBase {
 
     	bob(Pivot, 1 * globalspeed, .35f * globalHeight, false, idleTime, idleAmount);
     	walk(Organ, 1 * globalspeed, .25f * globalHeight, false, 0, 0.2f, idleTime * 2, idleAmount);
-    	walk(Glob1, 1 * globalspeed, globalDegree, false, 0, 0.2f, limbSwing, limbSwingAmount * 0.2f);
-    	walk(Glob2, 1* globalspeed, -globalDegree, false, 0, 0.2f, limbSwing, limbSwingAmount * 0.2f);
-    	walk(Glob3, 1* globalspeed, -globalDegree, false, 0, 0.2f, limbSwing, limbSwingAmount * 0.2f);
-    	walk(SkeletonPivot, 1* globalspeed, 0.5f * globalDegree, false, 0, 0.2f, limbSwing, limbSwingAmount * 0.4f);
+    	walk(Glob1, 1 * globalspeed, globalDegree, false, 0, 0.2f, limbSwing, limbSwingAmount);
+    	walk(Glob2, 1* globalspeed, -globalDegree, false, 0, 0.2f, limbSwing, limbSwingAmount);
+    	walk(Glob3, 1* globalspeed, -globalDegree, false, 0, 0.2f, limbSwing, limbSwingAmount);
+    	walk(SkeletonPivot, 1* globalspeed, 0.5f * globalDegree, false, 0, 0.2f, limbSwing, limbSwingAmount);
     }
 }
