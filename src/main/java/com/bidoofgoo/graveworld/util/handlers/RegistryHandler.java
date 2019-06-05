@@ -5,6 +5,7 @@ import com.bidoofgoo.graveworld.init.ModBlocks;
 import com.bidoofgoo.graveworld.init.ModEntities;
 import com.bidoofgoo.graveworld.init.ModItems;
 import com.bidoofgoo.graveworld.util.IHasModel;
+import com.bidoofgoo.graveworld.world.gen.WorldGenStructures;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -14,6 +15,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @EventBusSubscriber
 public class RegistryHandler {
@@ -41,12 +43,13 @@ public class RegistryHandler {
 			if(block instanceof IHasModel){
 				((IHasModel) block).registerModel();
 			}
-		}
+		} 
 	}
 
 	public static void preInitRegister() {
 		ModEntities.registerEntities();
 		RenderHandler.registryEntityRenders();
+		GameRegistry.registerWorldGenerator(new WorldGenStructures(), 0);
 	}
 
 	public static void initRegister() {

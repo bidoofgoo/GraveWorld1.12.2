@@ -51,13 +51,7 @@ public class BlockDeadGrass extends BlockBase{
                     {
                             worldIn.setBlockState(blockpos, ModBlocks.DEAD_GRASS_BLOCK.getDefaultState());
                     }
-                    else if (iblockstate1.getBlock() == Blocks.GRASS)
-                    {
-                            worldIn.setBlockState(blockpos, ModBlocks.DEAD_GRASS_BLOCK.getDefaultState());
-                    }else if (iblockstate1.getBlock() == Blocks.DIRT)
-                    {
-                        worldIn.setBlockState(blockpos, ModBlocks.DEAD_SOIL_BLOCK.getDefaultState());
-                }
+                    
                 }
             }
         }

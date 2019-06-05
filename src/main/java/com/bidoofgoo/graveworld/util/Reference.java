@@ -9,7 +9,7 @@ public class Reference {
 	public static final String COMMON_PROXY_CLASS = "com.bidoofgoo.graveworld.proxy.CommonProxy";
 
 	public static final int GUI_SOUL_EXTRACTOR = 0;
-	public static final int GUI_SINTERING_FURNACE = 1;
+	public static final int GUI_SOUL_INFUSER = 1;
 
 	public static final int ENTITY_ID_HEAP = 450;
 }

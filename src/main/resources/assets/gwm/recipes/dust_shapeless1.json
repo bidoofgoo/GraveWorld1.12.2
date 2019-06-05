@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+{"item": "gwm:dust_block"}
+],
+    "result": {
+        "item": "gwm:dust",
+        "count": 4,
+        "data": 0 
+    }
+}

@@ -1,0 +1,12 @@
+{
+   "variants": {
+      "burning=false,facing=north": {"model": "gwm:soul_infuser"},
+      "burning=false,facing=south": { "model": "gwm:soul_infuser", "y": 180 },
+      "burning=false,facing=west":  { "model": "gwm:soul_infuser", "y": 270 },
+      "burning=false,facing=east":  { "model": "gwm:soul_infuser", "y": 90 },
+      "burning=true,facing=north": {"model": "gwm:soul_infuser_infusing"},
+      "burning=true,facing=south": { "model": "gwm:soul_infuser_infusing", "y": 180 },
+      "burning=true,facing=west":  { "model": "gwm:soul_infuser_infusing", "y": 270 },
+      "burning=true,facing=east":  { "model": "gwm:soul_infuser_infusing", "y": 90 }
+   }
+}

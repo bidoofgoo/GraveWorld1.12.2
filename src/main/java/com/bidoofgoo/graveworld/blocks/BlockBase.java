@@ -6,6 +6,7 @@ import com.bidoofgoo.graveworld.init.ModItems;
 import com.bidoofgoo.graveworld.util.IHasModel;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -28,5 +29,6 @@ public class BlockBase extends Block implements IHasModel{
 
 		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
+
 
 }

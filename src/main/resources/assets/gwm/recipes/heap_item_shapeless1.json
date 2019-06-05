@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+{"item": "minecraft:rotten_flesh"}
+,{"item": "minecraft:rotten_flesh"}
+,{"item": "minecraft:bone"}
+,{"item": "minecraft:bone"}
+],
+    "result": {
+        "item": "gwm:heap_item",
+        "count": 1,
+        "data": 0 
+    }
+}

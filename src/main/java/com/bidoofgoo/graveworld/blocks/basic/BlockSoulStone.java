@@ -5,6 +5,7 @@ import java.util.Random;
 import com.bidoofgoo.graveworld.blocks.BlockBase;
 import com.bidoofgoo.graveworld.init.ModBlocks;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -50,10 +51,11 @@ public class BlockSoulStone extends BlockBase{
                     IBlockState iblockstate = worldIn.getBlockState(blockpos.up());
                     IBlockState iblockstate1 = worldIn.getBlockState(blockpos);
 
-                    if (iblockstate1.getBlock() == Blocks.DIRT)
+                    Block blonky =  iblockstate1.getBlock();
+                    if (blonky == Blocks.DIRT)
                     {
                     	worldIn.setBlockState(blockpos, ModBlocks.DEAD_SOIL_BLOCK.getDefaultState());
-                    } else if(iblockstate1.getBlock() == Blocks.GRASS) {
+                    } else if(blonky == Blocks.GRASS) {
                     	worldIn.setBlockState(blockpos, ModBlocks.DEAD_GRASS_BLOCK.getDefaultState());
                     }
                     

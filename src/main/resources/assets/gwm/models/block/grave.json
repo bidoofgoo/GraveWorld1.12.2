@@ -1,0 +1,65 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "grave": "gwm:blocks/grave"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 1, 0, 0 ], 
+            "to": [ 15, 14, 2 ], 
+            "faces": {
+                "north": { "texture": "#grave", "uv": [ 1, 2, 15, 16 ] },
+                "east": { "texture": "#grave", "uv": [ 0, 0, 2, 14 ] },
+                "south": { "texture": "#grave", "uv": [ 1, 2, 15, 16 ] },
+                "west": { "texture": "#grave", "uv": [ 0, 0, 2, 14 ] },
+                "up": { "texture": "#grave", "uv": [ 1, 2, 15, 4 ] },
+                "down": { "texture": "#grave", "uv": [ 1, 0, 15, 2 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 14, 0 ], 
+            "to": [ 14, 16, 2 ], 
+            "faces": {
+                "north": { "texture": "#grave", "uv": [ 2, 0, 14, 2 ] },
+                "east": { "texture": "#grave", "uv": [ 0, 0, 2, 2 ] },
+                "south": { "texture": "#grave", "uv": [ 2, 0, 14, 2 ] },
+                "west": { "texture": "#grave", "uv": [ 0, 0, 2, 2 ] },
+                "up": { "texture": "#grave", "uv": [ 2, 2, 14, 4 ] }
+            }
+        }
+    ]
+}

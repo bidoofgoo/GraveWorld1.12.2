@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "dd",
+        "dd"
+    ],
+    "key": {
+        "d": {
+            "item": "gwm:dust",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "gwm:dust_block",
+        "count": 1,
+        "data": 0 
+    }
+}

@@ -4,6 +4,9 @@ package com.bidoofgoo.graveworld.util.handlers;
 import com.bidoofgoo.graveworld.blocks.machines.soul_extractor.ContainerSoulExtractor;
 import com.bidoofgoo.graveworld.blocks.machines.soul_extractor.GuiSoulExtractor;
 import com.bidoofgoo.graveworld.blocks.machines.soul_extractor.TileEntitySoulExtractor;
+import com.bidoofgoo.graveworld.blocks.machines.soul_infusor.ContainerSoulInfuser;
+import com.bidoofgoo.graveworld.blocks.machines.soul_infusor.GuiSoulInfuser;
+import com.bidoofgoo.graveworld.blocks.machines.soul_infusor.TileEntitySoulInfuser;
 import com.bidoofgoo.graveworld.util.Reference;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,6 +20,7 @@ public class GuiHandler implements IGuiHandler {
 	@Override
 	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 		if(ID == Reference.GUI_SOUL_EXTRACTOR) return new ContainerSoulExtractor(player.inventory, (TileEntitySoulExtractor)world.getTileEntity(new BlockPos(x,y,z)));
+		else if(ID == Reference.GUI_SOUL_INFUSER) return new ContainerSoulInfuser(player.inventory, (TileEntitySoulInfuser)world.getTileEntity(new BlockPos(x,y,z)));
 		return null;
 	}
 
@@ -24,6 +28,8 @@ public class GuiHandler implements IGuiHandler {
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 		if (ID == Reference.GUI_SOUL_EXTRACTOR) {
 			return new GuiSoulExtractor(player.inventory, (TileEntitySoulExtractor)world.getTileEntity(new BlockPos(x,y,z)));
+		}else if(ID == Reference.GUI_SOUL_INFUSER) {
+			return new GuiSoulInfuser(player.inventory, (TileEntitySoulInfuser)world.getTileEntity(new BlockPos(x,y,z)));
 		}
 		return null;
 	}

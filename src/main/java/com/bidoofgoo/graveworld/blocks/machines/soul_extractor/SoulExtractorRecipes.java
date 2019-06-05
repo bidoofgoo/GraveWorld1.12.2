@@ -34,7 +34,7 @@ public class SoulExtractorRecipes
     private SoulExtractorRecipes()
     {
         this.addSmeltingRecipeForBlock(Blocks.DIRT, new ItemStack(Item.getItemFromBlock(ModBlocks.DEAD_SOIL_BLOCK)), new ItemStack(ModItems.SOUL), 1.0F);
-        this.addSmelting(ModItems.SOUL_DUST, new ItemStack(ModItems.VOID_DUST), new ItemStack(ModItems.ANGRY_SOUL), 1.0f);
+        this.addSmelting(ModItems.SOUL_DUST, new ItemStack(ModItems.DUST), new ItemStack(ModItems.ANGRY_SOUL), 1.0f);
     }
 
     /**

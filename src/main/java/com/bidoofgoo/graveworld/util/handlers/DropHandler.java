@@ -22,8 +22,7 @@ public class DropHandler {
 	ArrayList<Drop> dropjes = new ArrayList<Drop>();
 
 	public DropHandler() {
-		new Drop(ModItems.VOID_DUST, EntityEnderman.class, 0.5f, 3);
-		new Drop(ModItems.VOID_DUST, EntityMob.class, 0.10f, 1);
+		new Drop(ModItems.VOID_DUST, EntityEnderman.class, 0.25f, 3);
 		new Drop(Items.ROTTEN_FLESH, EntityHeap.class, 0.5f, 2);
 		new Drop(Items.BONE, EntityHeap.class, 0.25f, 2);
 
