@@ -41,10 +41,10 @@ public class SoulInfuserRecipes
     private SoulInfuserRecipes()
     {
     	// Add recipes here!
-        this.addInfusingRecipe(new ItemStack(ModItems.SOUL_DUST), new ItemStack(ModItems.GOOD_SOUL), new ItemStack(ModItems.SEEKING_SOULMASS), new ItemStack(Items.GLOWSTONE_DUST), 200, 1.0f);
-        this.addInfusingRecipe(new ItemStack(ModItems.HEAP_ITEM), new ItemStack(ModItems.ANGRY_SOUL), new ItemStack(ModItems.SEEKING_SOULMASS), EntityHeap.class, 500, .5f);
-        this.addInfusingRecipe(new ItemStack(ModItems.CORPSE_ITEM), new ItemStack(ModItems.ANGRY_SOUL), new ItemStack(ModItems.SEEKING_SOULMASS), EntityZombie.class, 1000, 2f);
-        this.addInfusingRecipe(new ItemStack(ModItems.SKELETON_ITEM), new ItemStack(ModItems.ANGRY_SOUL), new ItemStack(ModItems.SEEKING_SOULMASS), EntitySkeleton.class, 1000, 2f);
+        this.addInfusingRecipe(new ItemStack(ModItems.SOUL_DUST), new ItemStack(ModItems.GOOD_SOUL), new ItemStack(ModItems.AMULET_RUSTY), new ItemStack(Items.GLOWSTONE_DUST), 200, 1.0f);
+        this.addInfusingRecipe(new ItemStack(ModItems.HEAP_ITEM), new ItemStack(ModItems.ANGRY_SOUL), new ItemStack(ModItems.AMULET_LIFE), EntityHeap.class, 500, .5f);
+        this.addInfusingRecipe(new ItemStack(ModItems.CORPSE_ITEM), new ItemStack(ModItems.ANGRY_SOUL), new ItemStack(ModItems.AMULET_LIFE), EntityZombie.class, 1000, 2f);
+        this.addInfusingRecipe(new ItemStack(ModItems.SKELETON_ITEM), new ItemStack(ModItems.ANGRY_SOUL), new ItemStack(ModItems.AMULET_LIFE), EntitySkeleton.class, 1000, 2f);
     
     }
 
@@ -90,7 +90,8 @@ public class SoulInfuserRecipes
         
         recipes.forEach(recipe -> {
         	
-        	if(recipe.in.getItem() == in.getItem() && recipe.soul.getItem() == soul.getItem() && recipe.fuel.getItem() == fuel.getItem()) {
+        	if(recipe.in.getItem() == in.getItem() && recipe.soul.getItem() == soul.getItem() && 
+        			(recipe.fuel.getItem() == fuel.getItem() || recipe.fuel.getItem() == ModItems.AMULET_LEGENDARY)) {
         		returnStack[0] = recipe;
         		System.out.println("found recipe!");
         	}

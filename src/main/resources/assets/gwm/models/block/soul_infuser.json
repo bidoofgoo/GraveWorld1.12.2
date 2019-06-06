@@ -3,6 +3,7 @@
    "textures": {
       "top": "gwm:blocks/soul_infuser_top",
       "front": "gwm:blocks/soul_infuser_front",
-      "side": "gwm:blocks/soul_infuser_side"
+      "side": "gwm:blocks/soul_infuser_side",
+	  "bottom": "gwm:blocks/soul_infuser_side"
    }
 }

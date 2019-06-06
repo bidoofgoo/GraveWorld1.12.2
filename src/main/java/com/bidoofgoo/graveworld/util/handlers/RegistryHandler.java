@@ -50,6 +50,7 @@ public class RegistryHandler {
 		ModEntities.registerEntities();
 		RenderHandler.registryEntityRenders();
 		GameRegistry.registerWorldGenerator(new WorldGenStructures(), 0);
+		SmeltingHandler.registerSmeltings();
 	}
 
 	public static void initRegister() {

@@ -72,7 +72,7 @@ public class WorldGenStructures implements IWorldGenerator{
 			foundGround = block == topBlock;
 		}
 		
-		return y;
+		return y - 1;
 	}
 
 }

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+{"item": "minecraft:emerald"}
+,{"item": "gwm:amulet_bone"}
+,{"item": "gwm:seeking_soulmass"}
+],
+    "result": {
+        "item": "gwm:amulet_peculiar",
+        "count": 1,
+        "data": 0 
+    }
+}

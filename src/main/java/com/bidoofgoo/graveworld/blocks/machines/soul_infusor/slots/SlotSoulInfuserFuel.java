@@ -2,6 +2,7 @@ package com.bidoofgoo.graveworld.blocks.machines.soul_infusor.slots;
 
 import com.bidoofgoo.graveworld.blocks.machines.soul_extractor.TileEntitySoulExtractor;
 import com.bidoofgoo.graveworld.blocks.machines.soul_infusor.TileEntitySoulInfuser;
+import com.bidoofgoo.graveworld.items.ItemAmulet;
 
 import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
@@ -21,7 +22,7 @@ public class SlotSoulInfuserFuel extends Slot
      */
     public boolean isItemValid(ItemStack stack)
     {
-        return TileEntitySoulInfuser.isItemFuel(stack);
+        return stack.getItem() instanceof ItemAmulet;
     }
 
     public int getItemStackLimit(ItemStack stack)

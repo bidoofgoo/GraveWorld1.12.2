@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+{"item": "minecraft:dye", "data": 15}
+,{"item": "minecraft:clay"}
+,{"item": "minecraft:water_bucket"}
+],
+    "result": {
+        "item": "gwm:bone_mush",
+        "count": 2,
+        "data": 0 
+    }
+}
