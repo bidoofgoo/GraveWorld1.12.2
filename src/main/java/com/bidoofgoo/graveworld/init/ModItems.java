@@ -7,10 +7,21 @@ import com.bidoofgoo.graveworld.items.ItemBase;
 import com.bidoofgoo.graveworld.items.ItemDurable;
 import com.bidoofgoo.graveworld.items.ItemSoul;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class ModItems {
-
+	// Creative tabs
+	public static final CreativeTabs GRAVETAB = new CreativeTabs("tabGraveWorld") {
+			
+		@Override
+		public ItemStack getTabIconItem() {
+			// TODO Auto-generated method stub
+			return new ItemStack(ModBlocks.SOUL_STONE_BLOCK);
+		}
+	};
+	
 	public static final ArrayList<Item> ITEMS = new ArrayList<Item>();
 
 	// Generic
@@ -39,4 +50,5 @@ public class ModItems {
 	public static final Item GOOD_SOUL = new ItemSoul("good_soul");
 	public static final Item SOUL = new ItemSoul("neutral_soul");
 	public static final Item ANGRY_SOUL = new ItemSoul("angry_soul");
+	
 }
