@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "B",
+        "S",
+        "R"
+    ],
+    "key": {
+        "B": {
+            "item": "gwm:blood_emerald",
+            "data": 0
+        }, 
+        "S": {
+            "item": "gwm:seeking_soulmass",
+            "data": 0
+        }, 
+        "R": {
+            "item": "minecraft:blaze_rod",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "gwm:extracting_stick",
+        "count": 1,
+        "data": 0 
+    }
+}

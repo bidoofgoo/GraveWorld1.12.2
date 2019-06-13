@@ -41,24 +41,28 @@ public class SoulInfuserRecipes
     private SoulInfuserRecipes()
     {
     	// Add recipes here!
-        this.addInfusingRecipe(new ItemStack(ModItems.SOUL_DUST), new ItemStack(ModItems.GOOD_SOUL), new ItemStack(ModItems.AMULET_RUSTY), new ItemStack(Items.GLOWSTONE_DUST), 200, 1.0f);
-        this.addInfusingRecipe(new ItemStack(ModItems.HEAP_ITEM), new ItemStack(ModItems.ANGRY_SOUL), new ItemStack(ModItems.AMULET_LIFE), EntityHeap.class, 500, .5f);
-        this.addInfusingRecipe(new ItemStack(ModItems.CORPSE_ITEM), new ItemStack(ModItems.ANGRY_SOUL), new ItemStack(ModItems.AMULET_LIFE), EntityZombie.class, 1000, 2f);
-        this.addInfusingRecipe(new ItemStack(ModItems.SKELETON_ITEM), new ItemStack(ModItems.ANGRY_SOUL), new ItemStack(ModItems.AMULET_LIFE), EntitySkeleton.class, 1000, 2f);
-    
+        this.addInfusingRecipe(ModItems.SOUL_DUST, ModItems.GOOD_SOUL, ModItems.AMULET_RUSTY, Items.GLOWSTONE_DUST, 200, 1.0f);
+        
+        // Peculier Amulet
+        this.addInfusingRecipe(Items.EMERALD, ModItems.ANGRY_SOUL, ModItems.AMULET_PECULIAR, ModItems.BLOOD_EMERALD, 250, 1.0f);
+        
+        // Amulet of life
+        this.addInfusingRecipe(ModItems.HEAP_ITEM, ModItems.ANGRY_SOUL, ModItems.AMULET_LIFE, EntityHeap.class, 500, .5f);
+        this.addInfusingRecipe(ModItems.CORPSE_ITEM, ModItems.ANGRY_SOUL, ModItems.AMULET_LIFE, EntityZombie.class, 1000, 2f);
+        this.addInfusingRecipe(ModItems.SKELETON_ITEM, ModItems.ANGRY_SOUL, ModItems.AMULET_LIFE, EntitySkeleton.class, 1000, 2f);    
     }
 
     /**
      * Adds a smelting recipe using an ItemStack as the input for the recipe.
      */
-    public void addInfusingRecipe(ItemStack in, ItemStack soul, ItemStack fuel, ItemStack result, int cooktime, float experience)
+    public void addInfusingRecipe(Item in, Item soul, Item fuel, Item result, int cooktime, float experience)
     {
-        recipes.add(new SoulInfuserRecipe(in, soul, fuel, result, cooktime, experience));
+        recipes.add(new SoulInfuserRecipe(new ItemStack(in), new ItemStack(soul), new ItemStack(fuel), new ItemStack(result), cooktime, experience));
     }
     
-    public void addInfusingRecipe(ItemStack in, ItemStack soul, ItemStack fuel, Class<? extends Entity> entityClass, int cooktime, float experience)
+    public void addInfusingRecipe(Item in, Item soul, Item fuel, Class<? extends Entity> entityClass, int cooktime, float experience)
     {
-        recipes.add(new SoulInfuserRecipe(in, soul, fuel, entityClass, cooktime, experience));
+        recipes.add(new SoulInfuserRecipe(new ItemStack(in), new ItemStack(soul), new ItemStack(fuel), entityClass, cooktime, experience));
     }
 
     /**
